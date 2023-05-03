@@ -7,12 +7,9 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1300 height=600 style="width: 1300px; height: 600px; background: #231F20"></canvas>
-<<<<<<< Updated upstream
-    <script src="Build/TestWebBuild.loader.js"></script>
-=======
+
     <script src="Build/ADPTest.loader.js"></script>
->>>>>>> Stashed changes
-    <script>
+>>>>>>> Stashed changes    <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
         var meta = document.createElement('meta');
@@ -29,15 +26,11 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-<<<<<<< Updated upstream
-        dataUrl: "Build/TestWebBuild.data",
-        frameworkUrl: "Build/TestWebBuild.framework.js",
-        codeUrl: "Build/TestWebBuild.wasm",
-=======
+
         dataUrl: "Build/ADPTest.data",
         frameworkUrl: "Build/ADPTest.framework.js",
         codeUrl: "Build/ADPTest.wasm",
->>>>>>> Stashed changes
+
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "ADP Demo",
