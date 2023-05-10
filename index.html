@@ -6,8 +6,7 @@
     <title>Unity WebGL Player | ADP Demo</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1300 height=600 style="width: 1300px; height: 600px; background: #231F20"></canvas>
-
+    <canvas id="unity-canvas" width=1400 height=700 style="width: 1400px; height: 700px; background: #231F20"></canvas>
     <script src="Build/ADPTest.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -26,11 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-
         dataUrl: "Build/ADPTest.data",
         frameworkUrl: "Build/ADPTest.framework.js",
         codeUrl: "Build/ADPTest.wasm",
-
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "ADP Demo",
